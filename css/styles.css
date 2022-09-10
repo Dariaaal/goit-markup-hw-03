@@ -1,0 +1,218 @@
+/* колір основного тексту #212121 */
+/* другий колір тексту #757575 */
+/* білий #fff */
+/* чорний #000 */
+/* акцент #2196F3 */
+
+:root{
+    --primary-text-color: #212121;
+    --seconday-text-color: #757575;
+    --accent-color: #2196F3;
+    --letters-color: #fff;
+    --logo-color: #000;
+    --footer-links-color: rgba(255, 255, 255, 0.6);
+    --hero-bg-color: #2F303A;  
+    --footer-bg-color: #2F303A;
+    --hero-button-color: #188CEB;
+    --button-bg-color: #F5F4FA;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--letters-color);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+
+.logo{
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-part{
+    color: var(--logo-color)
+}
+
+ul{
+    list-style: none;
+}
+
+/* Site nav */
+
+.site-nav a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,.site-nav a:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color)
+}
+
+.contacts{
+    color: var(--seconday-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts:hover,.contacts:focus{
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+/* Додаю колір, щоб було видно білі літери, потім перероблю як треба */
+.hero-section{
+    background-color: var(--hero-bg-color);   
+}
+
+.hero-title{
+    color: var(--letters-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button{
+    color: var(--letters-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hero-button:hover,.hero-button:focus{
+    background-color: var(--hero-button-color);
+}
+
+/* Main */
+
+.buttons-list button{
+    color: var(--primary-text-color);
+    background-color: var(--button-bg-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+}
+
+.buttons-list button:hover,.buttons-list button:focus{
+    background-color: var(--accent-color);
+    color: var(--letters-color);
+}
+
+.main-chapter{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;    
+}
+
+.main-titles{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.main-paragraphs{
+    color: var(--seconday-text-color);
+    line-height: 1.7;
+}
+
+.names{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.description{
+    color: var(--seconday-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.examples-titles{
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples-paragraphs{
+    color: var(--seconday-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* Footer */
+
+.studio-address{
+    color: var(--letters-color);
+    line-height: 1.7;
+}
+
+.footer{
+    background-color: var(--footer-bg-color);
+}
+
+address{
+    font-style: normal;
+}
+
+.logo-footer{
+    color: var(--letters-color);
+}
+ 
+.studio-address:hover,.studio-address:focus{
+    color: var(--accent-color);
+}
+
+.contacts-footer{
+    color: var(--footer-links-color);
+    line-height: 1.7;
+}
+
+.contacts-footer:hover,.contacts-footer:focus{
+    color: var(--accent-color);
+}
+
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
