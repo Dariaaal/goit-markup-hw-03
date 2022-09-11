@@ -162,11 +162,12 @@ section{
     text-transform: uppercase;
     max-width: 696px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .hero-button{
     display: inline-block;
-    border: 1px solid transparent;
+    border: transparent;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 216px;
@@ -190,7 +191,6 @@ section{
 .buttons-list{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
     margin-bottom: 50px;
     gap: 8px;
 }
@@ -248,6 +248,7 @@ section{
 .main-paragraphs{
     color: var(--seconday-text-color);
     line-height: 1.7;
+    width: 270px;
 }
 
 .works{
